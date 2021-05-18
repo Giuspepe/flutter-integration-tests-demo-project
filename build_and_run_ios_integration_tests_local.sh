@@ -15,4 +15,4 @@ zip -r "ios_tests.zip" "Release-iphoneos" "Runner_iphoneos$dev_target-arm64-armv
 popd
 
 # run tests
-xcodebuild test-without-building -xctestrun "build/ios_integ/Build/Products/Runner_iphoneos14.3-arm64.xctestrun" -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max'
+xcodebuild test-without-building -xctestrun "build/ios_integ/Build/Products/Runner_iphoneos14.3-arm64-armv7.xctestrun" -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max'

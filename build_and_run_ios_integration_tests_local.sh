@@ -4,7 +4,7 @@ product="build/ios_integ/Build/Products"
 dev_target="14.4"
 
 # Pass --simulator if building for the simulator.
-flutter build ios integration_test/app_test.dart -release
+flutter build ios integration_test/app_test.dart --debug --simulator
 
 pushd ios
 xcodebuild -workspace Runner.xcworkspace -scheme Runner -config Flutter/Release.xcconfig -derivedDataPath $output -sdk iphoneos build-for-testing
